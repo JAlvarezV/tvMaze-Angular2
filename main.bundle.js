@@ -208,6 +208,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 var routes = [
     { path: '', redirectTo: '/home', pathMatch: 'full' },
+    { path: '**', redirectTo: '/home', pathMatch: 'full' },
     { path: 'home', component: __WEBPACK_IMPORTED_MODULE_2__home_home_component__["a" /* HomeComponent */] },
     { path: 'show/:id', component: __WEBPACK_IMPORTED_MODULE_3__show_info_show_info_component__["a" /* ShowInfoComponent */] }
 ];
