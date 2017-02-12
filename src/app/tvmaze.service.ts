@@ -5,7 +5,7 @@ import 'rxjs/add/operator/map';
 
 @Injectable()
 export class TvmazeService {
-  private apiURL = 'http://api.tvmaze.com/';
+  private apiURL = 'https://api.tvmaze.com/';
   static query:string;
   constructor(private http:Http) { }
 
