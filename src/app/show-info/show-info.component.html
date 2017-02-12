@@ -1,0 +1,45 @@
+<div class="container">
+  <div *ngIf="show" class="row show-detail-container">
+    <div class="col-xs-12">
+      <div class="row">
+        <div class="col-xs-12 col-md-4">
+          <div class="show-detail-image-container">
+            <img *ngIf="show.image" src="{{show.image.original}}" alt="">
+            <img *ngIf="!show.image" src="../../assets/img/no-image.png" alt="">
+          </div>
+        </div>
+        <div class="col-xs-12 col-md-8 show-detail-info-container">
+          <h1>Title: {{show.name}}</h1>
+          <h2>Language: {{show.language}}</h2>
+          <h3>Country: {{show.network.country.name}}</h3>
+          <h3>Premiered: {{show.premiered}}</h3>
+          <h3>Status: {{show.status}}</h3>
+          <h3>Type: {{show.type}}</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <h3>Summary</h3>
+          <div [innerHTML]="show.summary"></div>
+        </div>
+      </div>
+      <div class="row show-detail-buttons-container">
+        <div class="col-xs-12 col-md-6">
+          <a href="{{show.url}}" target="_blank"><button class="btn btn-info">More Info</button></a>
+        </div>
+        <div class="col-xs-12 col-md-6">
+          <div class="pull-right">
+            <button class="btn btn-primary pull-right" (click)="goBack()">Go back</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--
+cast.person.image.original
+cast.person.name
+cast.person.url
+-->

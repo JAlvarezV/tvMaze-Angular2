@@ -1,0 +1,42 @@
+div.shows-container {
+  margin-top: 100px;
+}
+
+div.search-container {
+  margin-top: 100px;
+}
+
+div.show-container{
+  padding: 25px;
+}
+
+div.show-container a{
+  text-decoration: none;
+  color: black;
+}
+
+div.show-score p{
+
+}
+
+p.score{
+  font-size: 1.25em;
+}
+p.score span{
+  color: yellow;
+}
+
+div.show-image{
+  padding: 5px;
+  min-height: 340px;
+}
+
+div.show-image img {
+  width: 100%;
+}
+
+div.show-info{
+  font-size: 1.55em;
+  text-align: center;
+}
+

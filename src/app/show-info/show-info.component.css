@@ -1,0 +1,28 @@
+div.show-detail-container {
+  margin-top: 100px;
+}
+
+div.show-detail-container{
+  padding: 25px;
+}
+
+div.show-detail-image-container img {
+  width: 100%;
+}
+
+div.show-detail-info-container h1,h2,h3{
+  text-align: center;
+}
+
+div.show-detail-buttons-container {
+  margin-top: 15px;
+}
+
+div.show-detail-buttons-container button {
+  width: 25%;
+  padding:10px 25px;
+}
+
+div.show-detail-container * a{
+  text-decoration: none;
+}
