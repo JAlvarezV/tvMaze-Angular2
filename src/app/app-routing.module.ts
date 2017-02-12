@@ -6,8 +6,10 @@ import {ShowInfoComponent} from './show-info/show-info.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
+  { path: '**', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home',  component: HomeComponent },
   { path: 'show/:id', component: ShowInfoComponent}
+
 ];
 
 @NgModule({
